@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { SecondeComponent } from './seconde/seconde.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ChoicesComponent } from './choices/choices.component';
+import { PresentationComponent } from './presentation/presentation.component';
+import { ParcoursComponent } from './parcours/parcours.component';
 
 const routes: Routes = [
   {
@@ -15,6 +17,12 @@ const routes: Routes = [
   },
   {
     path: 'seconde',component:SecondeComponent
+  },
+  {
+path:"presentation",component:PresentationComponent
+  },
+  {
+path:"parcours",component:ParcoursComponent
   },
   {
     path:'unfound',component:NotFoundComponent

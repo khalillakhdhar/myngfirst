@@ -1,0 +1,25 @@
+<h1>Mon  parcours</h1>
+<h3>Education</h3>
+<ul>
+    <li *ngFor="let ed of education">
+        {{ed}}
+    </li>
+</ul>
+<h3>Experience</h3>
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Poste</th>
+            <th>date</th>
+
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let exp of experience; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{exp.description}}</td>
+            <td>{{exp.date}}</td>
+        </tr>
+</table>
